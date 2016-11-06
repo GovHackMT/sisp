@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 06-Nov-2016 às 17:16
+-- Generation Time: 06-Nov-2016 às 20:27
 -- Versão do servidor: 10.1.13-MariaDB
 -- PHP Version: 5.6.21
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `sis`
+-- Database: `sisp`
 --
 
 -- --------------------------------------------------------
@@ -124,7 +124,11 @@ INSERT INTO `consulta` (`id`, `expediente_id`, `nome`, `numero_sus`, `created_at
 (8, 13, 'Fainer Carneiro Nogueira', '43221312', '2016-11-06 01:42:17', '2016-11-06 09:09:22'),
 (9, 2, 'Fainer Carneiro Nogueira', '43221312', '2016-11-06 03:04:04', '2016-11-06 03:04:04'),
 (10, 7, 'Fainer Carneiro Nogueira', '43221312', '2016-11-06 07:44:49', '2016-11-06 07:44:49'),
-(11, 34, 'Fainer Carneiro Nogueira', '43243423423', '2016-11-06 12:33:19', '2016-11-06 12:33:19');
+(11, 34, 'Fainer Carneiro Nogueira', '43243423423', '2016-11-06 12:33:19', '2016-11-06 12:33:19'),
+(12, 8, 'Teste', '324245', '2016-11-06 13:42:46', '2016-11-06 13:42:46'),
+(13, 1, 'Fainer Carneiro Nogueira', '43221312', '2016-11-06 14:15:13', '2016-11-06 14:15:13'),
+(14, 7, 'atimilson', '212121', '2016-11-06 15:02:27', '2016-11-06 15:02:27'),
+(15, 38, 'Fainer Carneiro Nogueira', 'rwda', '2016-11-06 16:27:19', '2016-11-06 16:27:19');
 
 -- --------------------------------------------------------
 
@@ -145,48 +149,48 @@ CREATE TABLE `expediente` (
 --
 
 INSERT INTO `expediente` (`id`, `unidade_saude_id`, `tipo_medico_id`, `data`, `vaga`) VALUES
-(1, 1, 1, '2016-11-07 07:00:00', 50),
-(2, 1, 1, '2016-11-08 07:00:00', 48),
-(3, 1, 2, '2016-11-07 07:00:00', 49),
-(4, 1, 2, '2016-11-08 07:00:00', 50),
-(5, 1, 3, '2016-11-07 07:00:00', 50),
-(6, 1, 3, '2016-11-08 07:00:00', 50),
-(7, 2, 1, '2016-11-07 07:00:00', 49),
-(8, 2, 1, '2016-11-07 07:00:00', 50),
-(9, 2, 2, '2016-11-07 07:00:00', 49),
-(10, 2, 2, '2016-11-08 07:00:00', 50),
-(11, 2, 3, '2016-11-07 07:00:00', 50),
-(12, 2, 3, '2016-11-08 07:00:00', 50),
-(13, 3, 1, '2016-11-07 07:00:00', 50),
-(14, 3, 1, '2016-11-08 07:00:00', 50),
-(15, 3, 2, '2016-11-07 07:00:00', 50),
-(16, 3, 2, '2016-11-08 07:00:00', 50),
-(17, 3, 3, '2016-11-07 07:00:00', 50),
-(18, 3, 3, '2016-11-08 07:00:00', 50),
-(19, 4, 1, '2016-11-07 07:00:00', 50),
-(20, 4, 1, '2016-11-08 07:00:00', 50),
-(21, 4, 2, '2016-11-07 07:00:00', 50),
-(22, 4, 2, '2016-11-08 07:00:00', 50),
-(23, 4, 3, '2016-11-07 07:00:00', 50),
-(24, 4, 3, '2016-11-08 07:00:00', 50),
-(25, 5, 1, '2016-11-07 07:00:00', 50),
-(26, 5, 1, '2016-11-08 07:00:00', 50),
-(27, 5, 2, '2016-11-07 07:00:00', 50),
-(28, 5, 2, '2016-11-08 07:00:00', 50),
-(29, 5, 3, '2016-11-07 07:00:00', 50),
-(30, 5, 3, '2016-11-08 07:00:00', 50),
-(31, 6, 1, '2016-11-07 07:00:00', 50),
-(32, 6, 1, '2016-11-08 07:00:00', 50),
-(33, 6, 2, '2016-11-07 07:00:00', 50),
-(34, 6, 2, '2016-11-08 07:00:00', 49),
-(35, 6, 3, '2016-11-07 07:00:00', 50),
-(36, 6, 3, '2016-11-08 07:00:00', 50),
-(37, 7, 1, '2016-11-07 07:00:00', 50),
-(38, 7, 1, '2016-11-08 07:00:00', 50),
-(39, 7, 2, '2016-11-07 07:00:00', 50),
-(40, 7, 2, '2016-11-08 07:00:00', 50),
-(41, 7, 3, '2016-11-07 07:00:00', 50),
-(42, 7, 3, '2016-11-08 07:00:00', 50);
+(1, 8, 1, '2016-11-07 07:00:00', 49),
+(2, 8, 1, '2016-11-08 07:00:00', 48),
+(3, 8, 2, '2016-11-07 07:00:00', 49),
+(4, 8, 2, '2016-11-08 07:00:00', 50),
+(5, 8, 3, '2016-11-07 07:00:00', 50),
+(6, 8, 3, '2016-11-08 07:00:00', 50),
+(7, 9, 1, '2016-11-07 07:00:00', 48),
+(8, 9, 1, '2016-11-07 07:00:00', 49),
+(9, 9, 2, '2016-11-07 07:00:00', 49),
+(10, 9, 2, '2016-11-08 07:00:00', 50),
+(11, 9, 3, '2016-11-07 07:00:00', 50),
+(12, 9, 3, '2016-11-08 07:00:00', 50),
+(13, 10, 1, '2016-11-07 07:00:00', 50),
+(14, 10, 1, '2016-11-08 07:00:00', 50),
+(15, 10, 2, '2016-11-07 07:00:00', 50),
+(16, 10, 2, '2016-11-08 07:00:00', 50),
+(17, 10, 3, '2016-11-07 07:00:00', 50),
+(18, 10, 3, '2016-11-08 07:00:00', 50),
+(19, 11, 1, '2016-11-07 07:00:00', 50),
+(20, 11, 1, '2016-11-08 07:00:00', 50),
+(21, 11, 2, '2016-11-07 07:00:00', 50),
+(22, 11, 2, '2016-11-08 07:00:00', 50),
+(23, 11, 3, '2016-11-07 07:00:00', 50),
+(24, 11, 3, '2016-11-08 07:00:00', 50),
+(25, 12, 1, '2016-11-07 07:00:00', 50),
+(26, 12, 1, '2016-11-08 07:00:00', 50),
+(27, 12, 2, '2016-11-07 07:00:00', 50),
+(28, 12, 2, '2016-11-08 07:00:00', 50),
+(29, 12, 3, '2016-11-07 07:00:00', 50),
+(30, 12, 3, '2016-11-08 07:00:00', 50),
+(31, 13, 1, '2016-11-07 07:00:00', 50),
+(32, 13, 1, '2016-11-08 07:00:00', 50),
+(33, 13, 2, '2016-11-07 07:00:00', 50),
+(34, 13, 2, '2016-11-08 07:00:00', 49),
+(35, 13, 3, '2016-11-07 07:00:00', 50),
+(36, 13, 3, '2016-11-08 07:00:00', 50),
+(37, 14, 1, '2016-11-07 07:00:00', 50),
+(38, 14, 1, '2016-11-08 07:00:00', 49),
+(39, 14, 2, '2016-11-07 07:00:00', 50),
+(40, 14, 2, '2016-11-08 07:00:00', 50),
+(41, 14, 3, '2016-11-07 07:00:00', 50),
+(42, 14, 3, '2016-11-08 07:00:00', 50);
 
 -- --------------------------------------------------------
 
@@ -313,8 +317,8 @@ CREATE TABLE `unidade_saude` (
   `latitude` varchar(50) NOT NULL,
   `longitude` varchar(50) NOT NULL,
   `logradouro` varchar(250) NOT NULL,
+  `coordenador` text NOT NULL,
   `bairro` varchar(250) NOT NULL,
-  `coordenador` varchar(250) NOT NULL,
   `descricao` text NOT NULL,
   `telefone` text,
   `horario_inicial` time NOT NULL,
@@ -327,14 +331,14 @@ CREATE TABLE `unidade_saude` (
 -- Extraindo dados da tabela `unidade_saude`
 --
 
-INSERT INTO `unidade_saude` (`id`, `nome`, `latitude`, `longitude`, `logradouro`, `bairro`, `coordenador`, `descricao`, `telefone`, `horario_inicial`, `horario_final`, `dia_inicio`, `dia_fim`) VALUES
-(1, 'POLICLÍNICA DO VERDÃO:"DR.º JOSÉ FARIA DE VINAGRE"', '', '', 'AV. Agrícola Paes de Barros S/N', 'Verdão', 'Silvinha Gomes', 'PA atendimento 24 horas Ambulatório', '3617-1459(PA) /3634-9308(FAX)', '07:00:00', '17:00:00', 1, 5),
-(2, 'POLICLÍNICA DO PEDRA 90 "ANÍZIO SABO MENDES"', '', '', 'Av. Newton Rabelo de Castro', 'Pedra 90', '', 'PA atendimento 24 horas', '(065) 3617-1955/3617-1956(FAX)', '07:00:00', '17:00:00', 1, 5),
-(3, 'POLICLÍNICA DO COXIPÓ "Dr.º JOSÉ EDUARDO VAZ CURVO"', '', '', 'Rua 24 de agosto S/N', 'Vista Alegre', '', 'PA atendimento 24 horas Ambulatorio', '(065) 3617-1441/3617-1631/3617-1440/3617-1443', '07:00:00', '17:00:00', 1, 5),
-(4, 'POLICLÍNICA DO PASCOAL RAMOS "DR.º SILVIO CURVO"', '', '', 'Rua Benedito Antonio S/N', 'Pascoal Ramos', '', 'PA atendimento 24 horas Ambulatório', '3617-1306/3617-1302', '07:00:00', '17:00:00', 1, 5),
-(5, 'POLICLÍNICA DO PLANALTO "DR.º CLOVIS PITALUGA DE MOURA"', '', '', 'AV. Dos Trabalhadores', 'Planalto', '', 'PA atendimento 24 horas Ambulatório', '(65)3617-1415', '07:00:00', '17:00:00', 1, 5),
-(6, 'UPA Norte', '', '', 'Avenida Trancredo Neves,s/nº, Qd. 26, Rua: 15, 16 e 17', 'Morada do Ouro II', '', 'UPA Norte -  Morada do Ouro II (Atendimento 24 horas)', '(65) 3645-5713 / 3645-5711 / 3645- 5702', '07:00:00', '17:00:00', 1, 5),
-(7, 'UPA Sul', '', '', 'Avenida Brasil, s/n', 'Pascoal Ramos', '', 'UPA Sul – Pascoal Ramos (Atendimento 24 horas)', '65) 3667 4129 (provisório)', '07:00:00', '17:00:00', 1, 5);
+INSERT INTO `unidade_saude` (`id`, `nome`, `latitude`, `longitude`, `logradouro`, `coordenador`, `bairro`, `descricao`, `telefone`, `horario_inicial`, `horario_final`, `dia_inicio`, `dia_fim`) VALUES
+(8, ' Centro de Saúde CPA III ', '', '', 'Rua 39', '', ' CPA III ', ' Centro de Saúde CPA III Rua 39', '(65) 3649- 7271', '07:00:00', '17:00:00', 1, 5),
+(9, ' Centro de Saúde CPA IV  ', '', '', 'Avenida  Curió', '', '  CPA IV   ', ' Centro de Saúde CPA IV  Avenida  Curió', '(65) 3649- 7271', '07:00:00', '17:00:00', 1, 5),
+(10, ' Centro de Saúde Paiaguás  ', '', '', 'Avenida A', '', ' Paiaguás  Avenida A', ' Centro de Saúde Paiaguás  Avenida A', '(65) 3649- 7271', '07:00:00', '17:00:00', 1, 5),
+(11, ' Centro de Saúde Tijucal (Anexo c.o. Tijucal) ', '', '', ' Avenida Espigão', '', ' Centro de Saúde Tijucal (Anexo c.o. Tijucal)  Avenida Espigão', ' Centro de Saúde Tijucal (Anexo c.o. Tijucal)  Avenida Espigão', '(65) 3649- 7271', '07:00:00', '17:00:00', 1, 5),
+(12, ' Centro de Saúde Jardim Imperial ', '', '', '   Rua 2300', '', ' Centro de Saúde Jardim Imperial  Rua 2300', ' Centro de Saúde Jardim Imperial  Rua 2300', '(65) 3649- 7271', '07:00:00', '17:00:00', 1, 5),
+(13, ' Centro de Saúde Cohab São Gonçalo  ', '', '', '  Avenida B', '', ' Centro de Saúde Cohab São Gonçalo  Avenida B', ' Centro de Saúde Cohab São Gonçalo  Avenida B', '(65) 3649- 7271', '07:00:00', '17:00:00', 1, 5),
+(14, ' Centro de Saúde Parque Cuiabá', '', '', 'Rua D', '', ' Centro de Saúde Parque Cuiabá  Rua D 4', ' Centro de Saúde Parque Cuiabá  Rua D 4', '(65) 3649- 7271', '07:00:00', '17:00:00', 1, 5);
 
 --
 -- Indexes for dumped tables
@@ -411,7 +415,7 @@ ALTER TABLE `campanhas`
 -- AUTO_INCREMENT for table `consulta`
 --
 ALTER TABLE `consulta`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT for table `expediente`
 --
@@ -436,7 +440,7 @@ ALTER TABLE `tipo_medico`
 -- AUTO_INCREMENT for table `unidade_saude`
 --
 ALTER TABLE `unidade_saude`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 --
 -- Constraints for dumped tables
 --

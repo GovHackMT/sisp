@@ -10,7 +10,7 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
      * Configuração da url da api
      */
     .constant('api', {
-        url: 'http://localhost/sis/api/public/api/'
+        url: 'http://localhost/sisp/api/public/api/'
     })
 
     .config(function ($stateProvider, $urlRouterProvider, $mdThemingProvider, $mdIconProvider, $httpProvider) {
